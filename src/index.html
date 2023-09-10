@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asteroid</title>
+  <link rel="stylesheet" href="https://unpkg.com/grapesjs/dist/css/grapes.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/grapick/dist/grapick.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/grapesjs-preset-newsletter/dist/grapesjs-preset-newsletter.css">
+  <link rel="stylesheet" href="https://unpkg.com/grapesjs-rte-extensions/dist/grapesjs-rte-extensions.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/grapesjs-plugin-toolbox/dist/grapesjs-plugin-toolbox.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/grapesjs-component-code-editor/dist/grapesjs-component-code-editor.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/grapesjs-project-manager/dist/grapesjs-project-manager.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/grapesjs-rulers/dist/grapesjs-rulers.min.css">
+
+  <script src="https://unpkg.com/grapesjs"></script>
+  <script src="https://unpkg.com/grapesjs-tui-image-editor"></script>
+  <script src="https://unpkg.com/grapesjs-blocks-basic"></script>
+  <script src="https://unpkg.com/grapesjs-plugin-forms"></script>
+  <script src="https://unpkg.com/grapesjs-plugin-export"></script>
+  <script src="https://unpkg.com/grapesjs-navbar"></script>
+  <script src="https://unpkg.com/grapesjs-component-countdown"></script>
+  <script src="https://unpkg.com/grapesjs-style-gradient"></script>
+  <script src="https://unpkg.com/grapesjs-style-filter"></script>
+  <script src="https://unpkg.com/grapesjs-style-bg"></script>
+  <script src="https://unpkg.com/grapesjs-blocks-flexbox"></script>
+  <script src="https://unpkg.com/grapesjs-tabs"></script>
+  <script src="https://unpkg.com/grapesjs-tooltip"></script>
+  <script src="https://unpkg.com/grapesjs-custom-code"></script>
+  <script src="https://unpkg.com/grapesjs-touch"></script>
+  <script src="https://unpkg.com/grapesjs-parser-postcss"></script>
+  <script src="https://unpkg.com/grapesjs-typed"></script>
+  <script src="https://unpkg.com/grapesjs-preset-webpage"></script>
+  <script src="https://unpkg.com/grapesjs-preset-newsletter"></script>
+  <script src="https://unpkg.com/grapesjs-rte-extensions"></script>
+  <script src="https://unpkg.com/grapesjs-plugin-toolbox"></script>
+  <script src="https://unpkg.com/grapesjs-table"></script>
+  <script src="https://unpkg.com/grapesjs-tailwind"></script>
+  <script src="https://unpkg.com/grapesjs-freemarker-plugin"></script>
+  <script src="https://unpkg.com/grapesjs-component-code-editor"></script>
+  <script src="https://unpkg.com/grapesjs-project-manager"></script>
+  <script src="https://unpkg.com/grapesjs-html-form-storage"></script>
+  <script src="https://unpkg.com/grapesjs-style-border"></script>
+  <script src="https://unpkg.com/grapesjs-rulers"></script>
+  <script src="https://unpkg.com/grapesjs-script-editor"></script>
+  <script src="https://unpkg.com/grapesjs-component-twitch"></script>
+  <script src="https://unpkg.com/grapesjs-calendly"></script>
+<script src="https://unpkg.com/grapesjs-plugin-scroll"></script>
+  <script src="customPlugins.js"></script>
+</head>
+
+<body>
+  <div id="gjs">
+  </div>
+</body>
+<script type="text/javascript" defer>
+  let editor = grapesjs.init({
+    container: '#gjs',
+    storageManager: false,
+    fromElement: true,
+    storageManager: {
+      type: 'indexeddb',
+    },
+    plugins: ['grapesjs-preset-newsletter', 'EmptyDiv', 'ScrollAnimate', 'grapesjs-calendly', 'grapesjs-component-twitch', 'grapesjs-script-editor', 'grapesjs-rulers', 'grapesjs-style-border', 'grapesjs-project-manager', 'grapesjs-component-code-editor', 'grapesjs-plugin-toolbox', /*'grapesjs-firestore', */ 'grapesjs-preset-webpage', 'gjs-blocks-basic', 'grapesjs-blocks-flexbox', 'grapesjs-touch', 'grapesjs-typed', 'grapesjs-parser-postcss', 'grapesjs-style-bg', 'grapesjs-plugin-forms', 'grapesjs-custom-code', 'grapesjs-tooltip', 'grapesjs-tabs', 'grapesjs-style-filter', 'grapesjs-style-gradient', 'grapesjs-component-countdown', 'grapesjs-navbar', 'grapesjs-plugin-export', 'grapesjs-tui-image-editor', 'grapesjs-rte-extensions'],
+    pluginsOpts: {
+      'grapesjs-tui-image-editor': { config: { includeUI: { initMenu: 'filter' } } },
+      'gjs-blocks-basic': {/* options */ },
+      'grapesjs-plugin-forms': {/* options */ },
+      'grapesjs-plugin-export': { /* options */ },
+      'grapesjs-navbar': {/* options */ },
+      'grapesjs-component-countdown': { /* options */ },
+      'grapesjs-style-bg': { /* options */ },
+      'gjs-blocks-flexbox': { /* options */ },
+      'grapesjs-tabs': { /* options */ },
+      'grapesjs-tooltip': { /* options */ },
+      'grapesjs-custom-code': { /* options */ },
+      'grapesjs-touch': { /* options */ },
+      'grapesjs-parser-postcss': { /* options */ },
+      'grapesjs-typed': { /* options */ },
+      'grapesjs-preset-webpage': { /* options */ },
+      'grapesjs-preset-newsletter': { /* options */ },
+      'grapesjs-plugin-toolbox': { /* options */ },
+      'grapesjs-component-code-editor': { /* options */ },
+      'grapesjs-style-border': { /* options */ },
+      'grapesjs-rulers': { /* options */ },
+      'grapesjs-component-twitch': { /* options */ },
+      'grapesjs-script-editor': { /* options */ },
+      'grapesjs-calendly': { /* options */ },
+      'ScrollAnimate': { /* options */ },
+      'grapesjs-style-gradient': {
+          grapickOpts: {
+            min: 1,
+            max: 99,
+          }
+      },
+      'grapesjs-rte-extensions': {
+        // default options
+        base: {
+          bold: true,
+          italic: true,
+          underline: true,
+          strikethrough: true,
+          link: true,
+        },
+        //fonts: {
+        //  fontName: ['font1',...,'fontn'],
+        //  fontSize: true,
+        //  //An array of strings representing colors
+        //  fontColor: ['#fff',...],
+        //  //An array of strings representing colors
+        //  hilite: ['#fff',...],
+        //}
+        fonts: {
+          fontColor: true,
+          hilite: true,
+        },
+        format: {
+          heading1: true,
+          heading2: true,
+          heading3: true,
+          //heading4: false,
+          //heading5: false,
+          //heading6: false,
+          paragraph: true,
+          //quote: false,
+          clearFormatting: true,
+        },
+        subscriptSuperscript: false,//|true
+        indentOutdent: false,//|true
+        list: false,//|true
+        align: true,//|true
+        //actions: {
+        //  copy: true,
+        //  cut: true,
+        //  paste: true,
+        //  delete: true,
+        //},
+        actions: false,//|true
+        undoredo: false,//|true
+        extra: false,//|true
+        darkColorPicker: true,//|false
+        maxWidth: '600px'
+      }
+    }
+  });
+
+  // or add it to the StyleManager via API
+  editor.StyleManager.addProperty('extra', { extend: 'filter' });
+  editor.StyleManager.addProperty('extra', { extend: 'filter', property: 'backdrop-filter' });
+  const pn = editor.Panels;
+    const panelViews = pn.addPanel({
+      id: "views"
+    });
+    panelViews.get("buttons").add([
+      {
+        attributes: {
+          title: "Open Code"
+        },
+        className: "fa fa-file-code-o",
+        command: "open-code",
+        togglable: false, //do not close when button is clicked again
+        id: "open-code"
+      }
+    ]);
+    pn.addButton('options', {
+        id: 'open-templates',
+        className: 'fa fa-folder-o',
+        attributes: {
+          title: 'Open projects and templates'
+        },
+        command: 'open-templates', //Open modal 
+      });
+      pn.addButton('views', {
+        id: 'open-pages',
+        className: 'fa fa-file-o',
+        attributes: {
+          title: 'Open Pages'
+        },
+        command: 'open-pages',
+        togglable: false
+      });
+</script>
+<script src="customCommands.js" defer></script>
+
+</html>
